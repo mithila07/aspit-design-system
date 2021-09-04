@@ -1,0 +1,8 @@
+.content-div {
+    display: grid;
+    place-content: center;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    width: 100%;
+    color: #e0e0e0;
+}

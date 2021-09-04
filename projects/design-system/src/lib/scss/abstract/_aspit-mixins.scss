@@ -1,0 +1,357 @@
+@mixin placeholder {
+    &.placeholder {
+        @content;
+    }
+
+    &:-moz-placeholder {
+        @content;
+    }
+
+    &::-moz-placeholder {
+        @content;
+    }
+
+    &::-webkit-input-placeholder {
+        @content;
+    }
+}
+
+.bg-blue-100 {
+    background-color: $as-blue-100;
+}
+
+.bg-blue-200 {
+    background-color: $as-blue-200;
+}
+
+.bg-blue-300 {
+    background-color: $as-blue-300;
+}
+
+.bg-blue-400 {
+    background-color: $as-blue-400;
+}
+
+.bg-blue-500 {
+    background-color: $as-blue-500;
+}
+
+.bg-blue-600 {
+    background-color: $as-blue-600;
+}
+
+.bg-blue-700 {
+    background-color: $as-blue-700;
+}
+
+.bg-blue-800 {
+    background-color: $as-blue-800;
+}
+
+.bg-green-100 {
+    background-color: $as-green-100;
+}
+
+.bg-green-200 {
+    background-color: $as-green-200;
+}
+
+.bg-green-300 {
+    background-color: $as-green-300;
+}
+
+.bg-red-100 {
+    background-color: $as-red-100;
+}
+
+.bg-red-200 {
+    background-color: $as-red-200;
+}
+
+.bg-red-300 {
+    background-color: $as-red-300;
+}
+
+.bg-red-400 {
+    background-color: $as-red-400;
+}
+
+.bg-orange-100 {
+    background-color: $as-orange-100;
+}
+
+.bg-orange-200 {
+    background-color: $as-orange-200;
+}
+
+.bg-yellow-100 {
+    background-color: $as-yellow-100;
+}
+
+.bg-yellow-200 {
+    background-color: $as-yellow-200;
+}
+
+.bg-yellow-300 {
+    background-color: $as-yellow-300;
+}
+
+.bg-gray-100 {
+    background-color: $as-gray-100;
+}
+
+.bg-gray-200 {
+    background-color: $as-gray-200;
+}
+
+.bg-gray-300 {
+    background-color: $as-gray-300;
+}
+
+.bg-gray-400 {
+    background-color: $as-gray-400;
+}
+
+.bg-gray-500 {
+    background-color: $as-gray-500;
+}
+
+.bg-gray-600 {
+    background-color: $as-gray-600;
+}
+
+.bg-black-100 {
+    background-color: $as-black-100;
+}
+
+.bg-black-200 {
+    background-color: $as-black-200;
+}
+
+.bg-white-100 {
+    background-color: $as-white-100;
+}
+
+.bg-white-200 {
+    background-color: $as-white-200;
+}
+
+.as-text-primary {
+    color: $as-blue-600;
+}
+
+.as-text-secondary {
+    color: $as-gray-600;
+}
+
+.as-text-success {
+    color: $as-green-200;
+}
+
+.as-text-danger {
+    color: $as-red-300;
+}
+
+.as-text-warning {
+    color: $as-orange-200;
+}
+
+.as-text-white {
+    color: $as-white-100;
+}
+
+.as-text-black {
+    color: $as-black-100;
+}
+
+/* Typography */
+
+// h1,
+// .h1 {
+//     font-weight: 700;
+//     @include font-size($h1-font-sizes);
+//     margin-bottom: 0;
+// }
+
+// h2,
+// .h2 {
+//     font-weight: 700;
+//     @include font-size($h2-font-sizes);
+//     margin-bottom: 0;
+// }
+
+// h3,
+// .h3 {
+//     font-weight: 700;
+//     @include font-size($h3-font-sizes);
+//     margin-bottom: 0;
+// }
+
+// h4,
+// .h4 {
+//     font-size: 16px;
+//     line-height: 24px;
+//     margin-bottom: 0;
+// }
+
+// h5,
+// .h5 {
+//     font-weight: 700;
+//     font-size: 12px;
+//     line-height: 16px;
+//     margin-bottom: 0;
+// }
+
+// h6,
+// .h6 {
+//     font-weight: 600;
+//     font-size: 12px;
+//     line-height: 16px;
+//     margin-bottom: 0;
+// }
+
+// p,
+// b,
+// strong,
+// i,
+// em,
+// mark,
+// del,
+// ins,
+// .p {
+//     @include font-size($p-font-sizes);
+//     margin-bottom: 0;
+// }
+
+.mr-8,
+.mx-8 {
+    margin-right: 8px;
+}
+
+.ml-8,
+.mx-8 {
+    margin-left: 8px;
+}
+
+.mt-8,
+.my-8 {
+    margin-top: 8px;
+}
+
+.mb-8,
+.my-8 {
+    margin-bottom: 8px;
+}
+
+.pr-8,
+.px-8 {
+    padding-right: 8px;
+}
+
+.pl-8,
+.px-8 {
+    padding-left: 8px;
+}
+
+.pt-8,
+.py-8 {
+    padding-top: 8px;
+}
+
+.pb-8,
+.py-8 {
+    padding-bottom: 8px;
+}
+
+
+
+.mr-16,
+.mx-16 {
+    margin-right: 16px;
+}
+
+.ml-16,
+.mx-16 {
+    margin-left: 16px;
+}
+
+.mt-16,
+.my-16 {
+    margin-top: 16px;
+}
+
+.mb-16,
+.my-16 {
+    margin-bottom: 16px;
+}
+
+.mr-24,
+.mx-24 {
+    margin-right: 24px;
+}
+
+.ml-24,
+.mx-24 {
+    margin-left: 24px;
+}
+
+.mt-24,
+.my-24 {
+    margin-top: 24px;
+}
+
+.mb-24,
+.my-24 {
+    margin-bottom: 24px;
+}
+
+.pr-16,
+.px-16 {
+    padding-right: 16px;
+}
+
+.pl-16,
+.px-16 {
+    padding-left: 16px;
+}
+
+.pt-16,
+.py-16 {
+    padding-top: 16px;
+}
+
+.pb-16,
+.py-16 {
+    padding-bottom: 16px;
+}
+
+.pr-24,
+.px-24 {
+    padding-right: 24px;
+}
+
+.pl-24,
+.px-24 {
+    padding-left: 24px;
+}
+
+.pt-24,
+.py-24 {
+    padding-top: 24px;
+}
+
+.pb-24,
+.py-24 {
+    padding-bottom: 24px;
+}
+
+
+/* Widths and Heights */
+
+.h-56 {
+    height: 56px !important;
+}
+
+.h-40 {
+    height: 40px !important;
+}

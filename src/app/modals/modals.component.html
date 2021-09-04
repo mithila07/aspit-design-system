@@ -1,0 +1,83 @@
+<div class="title-wrapper mb-5 p-5 jumbotron jumbotron-fluid w-100">
+    <div class="display-4 mb-3">Modals</div>
+    <div class="lead">A dialog is a type of modal window that appears in front of app content to provide critical
+        information or ask for a decision.<br>Dialogs disable all app functionality when they appear,
+        and remain on screen until confirmed,
+        dismissed,
+        or a required action has been taken.</div>
+</div>
+<div class="sub-title-wrapper mb-3">
+    <h3>Confirmation</h3>
+</div>
+<div class="as-example row mb-5">
+    <div class="col-12 col-md-4">
+        <button type="button" class="btn btn-primary"
+            (click)="openModalWithClass(template1, 'as-modal--sm as-modal--confirmation')">Open modal
+            Confirmation</button>
+        <ng-template #template1>
+            <div class="modal-header">
+                <button type="button" class="close" aria-label="Close" (click)="modalRef.hide()">
+                    <i class="icon-close-box icon-lg" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="content-body">
+                    <i class="icon-erase content-body__icon as-text-primary" aria-hidden="true"></i>
+                    <h1 class="content-body__title mb-24">Header</h1>
+                    <p class="content-body__label mb-24">Body text</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="content-footer">
+                    <button class="as-btn as-btn--56 as-btn--primary">Action 01</button>
+                    <button class="as-btn as-btn--56 as-btn--secondary">Action 02</button>
+                </div>
+            </div>
+        </ng-template>
+
+        <div class="mt-3">Should add custom class <code>.as-modal .as-modal--sm as-modal--confirmation</code>. For
+            reference <a href="https://valor-software.com/ngx-bootstrap/#/modals#service-custom-css-class"
+                target="_blank">click
+                here</a>.</div>
+    </div>
+    <div class="col-12 offset-md-1 col-md-7 d-flex">
+        <pre class="w-100 mb-0"><code class="p-3 rounded"[highlight]="modalSm"></code></pre>
+    </div>
+</div>
+
+<div class="sub-title-wrapper mb-3">
+    <h3>Action</h3>
+</div>
+<div class="as-example row mb-5">
+    <div class="col-12 col-md-4"><button type="button" class="btn btn-primary"
+            (click)="openModalWithClass(template2, 'as-modal--sm' )">Open modal Confirmation</button>
+        <ng-template #template2>
+            <div class="modal-header">
+                <h3 class="modal-title flex-grow-1 text-center">Action</h3>
+                <button type="button" class="close" aria-label="Close" (click)="modalRef.hide()">
+                    <i class="icon-close-box icon-lg" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="content-body">
+                    <div class="content-div">
+                        content goes here
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="content-footer">
+                    <button class="as-btn as-btn--56 as-btn--primary">Action 01</button>
+                    <button class="as-btn as-btn--56 as-btn--secondary">Action 02</button>
+                </div>
+            </div>
+        </ng-template>
+
+        <div class="mt-3">Should add custom class <code>.as-modal .as-modal--sm</code>. For reference <a
+                href="https://valor-software.com/ngx-bootstrap/#/modals#service-custom-css-class" target="_blank">click
+                here</a>.</div>
+    </div>
+    <div class="col-12 offset-md-1 col-md-7 d-flex">
+        <pre class="w-100 mb-0"><code class="p-3 rounded"[highlight]="modalSmA"></code></pre>
+    </div>
+</div>

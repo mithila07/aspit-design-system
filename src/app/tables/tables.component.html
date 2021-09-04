@@ -1,0 +1,243 @@
+<div class="title-wrapper mb-5 p-5 jumbotron jumbotron-fluid w-100">
+    <div class="display-4 mb-3">Data tables</div>
+    <div class="lead">Data tables display information in a grid-like format of rows and columns.
+        <br>They organize information in a way that’s easy to scan, so that users can look for patterns and insights.
+    </div>
+</div>
+
+<div class="as-example row mb-5">
+    <div class="col-12 d-flex flex-column">
+        <div class="as-table table-responsive">
+            
+            <!-- New table -->
+            <virtual-scroller #scroll class="ps" [perfectScrollbar]>
+                <table class="table">
+                    <thead #header>
+                        <tr>
+                            <th scope="col">
+                                <div class="header-cell">
+                                    <div class="header-cell__content">
+                                        <span class="text">Headline</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div class="header-cell">
+                                    <div class="header-cell__content">
+                                        <span class="text">Headline</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div class="header-cell">
+                                    <div class="header-cell__content selected">
+                                        <span class="text">Headline</span>
+                                        <i class="icon-down-dir" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </th>
+                            <th scope="col">
+                                <div class="header-cell">
+                                    <div class="header-cell__content">
+                                        <span class="text">Headline</span>
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody #container>
+                        <tr>
+                            <td scope="row">
+                                <div class="body-cell">
+                                    <div class="body-cell__content">
+                                        <span class="text">Content</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="body-cell">
+                                    <div class="body-cell__content">
+                                        <span class="text">Content</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="stripped-cell">
+                                <div class="body-cell stripped">
+                                    <div class="body-cell__content">
+                                        <span class="text">Content</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="stripped-cell">
+                                <div class="body-cell stripped">
+                                    <div class="body-cell__content">
+                                        <span class="text">Content</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row">
+                                <div class="body-cell">
+                                    <div class="body-cell__content">
+                                        <span class="text">Content</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="body-cell">
+                                    <div class="body-cell__content">
+                                        <span class="text">Content</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="stripped-cell">
+                                <div class="body-cell stripped">
+                                    <div class="body-cell__content">
+                                        <span class="text mr-auto">Content</span>
+                                        <i class="icon-circle-up as-text-danger mr-2" aria-hidden="true"></i>
+                                        <i class="icon-icons8-info as-text-warning" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="stripped-cell">
+                                <div class="body-cell stripped">
+                                    <div class="body-cell__content">
+                                        <span class="text mr-auto">Content</span>
+                                        <i class="icon-icons8-info as-text-warning" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row">
+                                <div class="body-cell">
+                                    <div class="body-cell__content">
+                                        <span class="text">Content</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="body-cell">
+                                    <div class="body-cell__content">
+                                        <span class="text">Content</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="stripped-cell">
+                                <div class="body-cell stripped">
+                                    <div class="body-cell__content">
+                                        <span class="text mr-auto">Content</span>
+                                        <i class="icon-circle-up as-text-danger" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="stripped-cell">
+                                <div class="body-cell stripped">
+                                    <div class="body-cell__content">
+                                        <span class="text">Content</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row">
+                                <div class="body-cell">
+                                    <div class="body-cell__content">
+                                        <span class="text">Content</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="body-cell">
+                                    <div class="body-cell__content">
+                                        <span class="text">Content</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="stripped-cell">
+                                <div class="body-cell stripped">
+                                    <div class="body-cell__content">
+                                        <span class="text">Content</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="stripped-cell">
+                                <div class="body-cell stripped">
+                                    <div class="body-cell__content">
+                                        <span class="text">Content</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row">
+                                <div class="body-cell">
+                                    <div class="body-cell__content">
+                                        <span class="text">Content</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="body-cell">
+                                    <div class="body-cell__content">
+                                        <span class="text">Content</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="stripped-cell">
+                                <div class="body-cell stripped">
+                                    <div class="body-cell__content">
+                                        <span class="text">Content</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="stripped-cell">
+                                <div class="body-cell stripped">
+                                    <div class="body-cell__content">
+                                        <span class="text">Content</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row">
+                                <div class="body-cell">
+                                    <div class="body-cell__content">
+                                        <span class="text">Content</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="body-cell">
+                                    <div class="body-cell__content">
+                                        <span class="text">Content</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="stripped-cell">
+                                <div class="body-cell stripped">
+                                    <div class="body-cell__content">
+                                        <span class="text">Content</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td class="stripped-cell">
+                                <div class="body-cell stripped">
+                                    <div class="body-cell__content">
+                                        <span class="text">Content</span>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </virtual-scroller>
+
+        </div>
+    </div>
+
+    <div class="col-12 d-flex pt-5">
+        <pre class="w-100 mb-0"><code class="p-3 rounded"></code></pre>
+    </div>
+</div>

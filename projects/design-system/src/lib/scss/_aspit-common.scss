@@ -1,0 +1,15 @@
+html,
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif !important;
+  position: relative;
+  min-height: 100%;
+  font-size: 14px;
+  color: $as-black-100;
+}
+
+*, *:focus {
+  outline: none;
+}
+
+.border-right-success{border-right: 1px solid rgba(76,175,80,0.3); }

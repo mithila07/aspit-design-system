@@ -1,0 +1,142 @@
+.as-tooltip {
+
+    &.show {
+        opacity: 1;
+    }
+
+    .tooltip-inner {
+        background: $as-blue-800;
+    }
+
+    &.bs-tooltip-top {
+
+        .tooltip-arrow {
+
+            &::before {
+                border-top-color: $as-blue-800;
+            }
+        }
+    }
+
+    &.bs-tooltip-right {
+
+        .tooltip-arrow {
+
+            &::before {
+                border-right-color: $as-blue-800;
+            }
+        }
+    }
+
+    &.bs-tooltip-left {
+
+        .tooltip-arrow {
+
+            &::before {
+                border-left-color: $as-blue-800;
+            }
+        }
+    }
+
+    &.bs-tooltip-bottom {
+
+        .tooltip-arrow {
+
+            &::before {
+                border-bottom-color: $as-blue-800;
+            }
+        }
+    }
+
+    &--warning {
+        .tooltip-inner {
+            background: $as-orange-200;
+        }
+    
+        &.bs-tooltip-top {
+    
+            .tooltip-arrow {
+    
+                &::before {
+                    border-top-color: $as-orange-200;
+                }
+            }
+        }
+    
+        &.bs-tooltip-right {
+    
+            .tooltip-arrow {
+    
+                &::before {
+                    border-right-color: $as-orange-200;
+                }
+            }
+        }
+    
+        &.bs-tooltip-left {
+    
+            .tooltip-arrow {
+    
+                &::before {
+                    border-left-color: $as-orange-200;
+                }
+            }
+        }
+    
+        &.bs-tooltip-bottom {
+    
+            .tooltip-arrow {
+    
+                &::before {
+                    border-bottom-color: $as-orange-200;
+                }
+            }
+        }
+    }
+
+    &--danger {
+        .tooltip-inner {
+            background: $as-red-200;
+        }
+    
+        &.bs-tooltip-top {
+    
+            .tooltip-arrow {
+    
+                &::before {
+                    border-top-color: $as-red-200;
+                }
+            }
+        }
+    
+        &.bs-tooltip-right {
+    
+            .tooltip-arrow {
+    
+                &::before {
+                    border-right-color: $as-red-200;
+                }
+            }
+        }
+    
+        &.bs-tooltip-left {
+    
+            .tooltip-arrow {
+    
+                &::before {
+                    border-left-color: $as-red-200;
+                }
+            }
+        }
+    
+        &.bs-tooltip-bottom {
+    
+            .tooltip-arrow {
+    
+                &::before {
+                    border-bottom-color: $as-red-200;
+                }
+            }
+        }
+    }
+}

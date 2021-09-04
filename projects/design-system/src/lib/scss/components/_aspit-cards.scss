@@ -1,0 +1,16 @@
+.cards{
+    padding: 8px 0;
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+    height: 72px;
+    margin-bottom: 10px;
+    &--40{
+        height: 40px;
+    }
+    &--success{
+        border-color: #4CAF50;
+        background: #E1F9E2;
+    }
+}
+.cards-col--mw-0{min-width: 0;}
+.cards-col--160{min-width: 160px;max-width: 160px;} 

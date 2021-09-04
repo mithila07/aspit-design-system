@@ -1,0 +1,26 @@
+.h3 {
+    position: relative;
+    color: #20A092;
+}
+
+.h3::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background-color: #216E70;
+    left: 0;
+    top: 2px;
+}
+.sticky-top{
+    top: 10px;
+}
+.current-section{
+    color: #0078D7 !important;
+}
+a{
+    cursor: pointer;
+}
+.nav-link{
+    color: #999;
+}

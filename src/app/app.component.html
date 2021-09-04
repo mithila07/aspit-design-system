@@ -1,0 +1,132 @@
+<nav class="navbar navbar-light bg-light justify-content-start">
+    <span class="navbar-brand mb-0"><img src="assets/logo/aspit_logo.svg" alt="logo"></span>
+    <span class="h3 font-weight-bold mb-1 pl-3">Style guide</span>
+</nav>
+
+<div class="container-fluid d-flex flex-column pt-5 px-5">
+    <div class="row">
+        <div class="col-md-2">
+            <nav class="navbar sticky-top navbar-light bg-light">
+                <ul class="nav flex-column w-100">
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="scrollTo('section1')"
+                            [ngClass]="{ 'current-section': currentSection === 'section1' }">Color palette</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="scrollTo('section2')"
+                            [ngClass]="{ 'current-section': currentSection === 'section2' }">Typography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="scrollTo('section3')"
+                            [ngClass]="{ 'current-section': currentSection === 'section3' }">Form Elements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="scrollTo('section4')"
+                            [ngClass]="{ 'current-section': currentSection === 'section4' }">Badges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="scrollTo('section5')"
+                            [ngClass]="{ 'current-section': currentSection === 'section5' }">Tooltip</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="scrollTo('section6')"
+                            [ngClass]="{ 'current-section': currentSection === 'section6' }">Snackbar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="scrollTo('section7')"
+                            [ngClass]="{ 'current-section': currentSection === 'section7' }">Data Tables</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="scrollTo('section8')"
+                            [ngClass]="{ 'current-section': currentSection === 'section8' }">Timeline Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="scrollTo('section9')"
+                            [ngClass]="{ 'current-section': currentSection === 'section9' }">Avatars</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="scrollTo('section10')"
+                            [ngClass]="{ 'current-section': currentSection === 'section10' }">Navigation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" (click)="scrollTo('section11')"
+                            [ngClass]="{ 'current-section': currentSection === 'section11' }">Modals</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+        <div class="col-md-10">
+            <div scrollSpy [spiedTags]="['DIV']" (sectionChange)="onSectionChange($event)"
+                style="height:calc(100vh - 150px);overflow-y: scroll;">
+                <div id="section1">
+                    <app-colors></app-colors>
+                </div>
+
+                <div class="my-5"></div>
+
+                <div id="section2">
+                    <app-typography></app-typography>
+                </div>
+
+                <div class="my-5"></div>
+
+                <div id="section3">
+                    <app-form-elements></app-form-elements>
+                </div>
+
+                <div class="my-5"></div>
+
+                <div id="section4">
+                    <app-badges></app-badges>
+                </div>
+
+                <div class="my-5"></div>
+
+                <div id="section5">
+                    <app-tooltips></app-tooltips>
+                </div>
+
+                <div class="my-5"></div>
+
+                <div id="section6">
+                    <app-snakbar></app-snakbar>
+                </div>
+
+                <div class="my-5"></div>
+
+                <div id="section7">
+                    <app-tables></app-tables>
+                </div>
+
+                <div class="my-5"></div>
+
+                <div id="section8">
+                    <app-cards></app-cards>
+                </div>
+
+                <div class="my-5"></div>
+
+                <div id="section9">
+                    <app-avatars></app-avatars>
+                </div>
+
+                <div class="my-5"></div>
+
+                <div id="section10">
+                    <app-navigations></app-navigations>
+                </div>
+
+                <div class="my-5"></div>
+
+                <div id="section11">
+                    <app-modals></app-modals>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,42 @@
+.avatar {
+    border-color: #ffffff;
+    border-style: solid;
+    border-radius: 50%;
+
+    &--primary {
+        background-color: #0078D7;
+        color: #ffffff;
+    }
+
+    &__text {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    &--32 {
+        width: 32px;
+        height: 32px;
+        border-width: 2px;
+
+        img {
+            padding: 2px;
+        }
+
+        .avatar__text {
+            font-weight: 600;
+            font-size: 10px;
+            line-height: 16px;
+        }
+    }
+
+    &--64 {
+        width: 64px;
+        height: 64px;
+        border-width: 3px;
+
+        img {
+            padding: 3px;
+        }
+    }
+}

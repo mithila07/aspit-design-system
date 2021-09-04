@@ -1,0 +1,223 @@
+.as-main-nav {
+
+    .navbar-brand {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 0;
+    }
+
+    &__rhs-items {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+
+        .icon-item {
+            position: relative;
+            color: $as-white-100;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 2px;
+            margin-left: 8px;
+            transition: .2s ease-in-out all;
+
+            &:hover {
+                background-color: $as-blue-700;
+            }
+
+            i {
+                font-size: 20px;
+                line-height: 20px;
+            }
+
+            .as-num-chip {
+                position: absolute;
+                top: 0;
+                right: 0;
+                pointer-events: none;
+            }
+        }
+
+        .as-search__input {
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border: none;
+            border-left: 1px solid $as-gray-300;
+        }
+    }
+
+    &__dropdown {
+
+        &.ng-select {
+
+            .ng-select-container {
+                height: 40px;
+                border-radius: 0;
+                border-top-left-radius: 2px;
+                border-bottom-left-radius: 2px;
+                border: none;
+                padding: 0 16px;
+
+                .ng-value-container {
+                    padding-left: 0;
+
+                    .ng-value {
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+
+                        i {
+                            font-size: 20px;
+                            line-height: 20px;
+                            color: $as-blue-700;
+                        }
+                    }
+                }
+
+                .ng-arrow-wrapper {
+                    padding: 0;
+                    margin-left: 16px;
+                    width: auto;
+
+                    .ng-arrow {
+                        border-color: $as-black-100 transparent transparent;
+                    }
+                }
+            }
+
+            &.ng-select-opened {
+
+                .ng-select-container {
+
+                    .ng-arrow-wrapper {
+
+                        .ng-arrow {
+                            border-color: transparent transparent $as-black-100;
+                        }
+                    }
+                }
+            }
+
+            .ng-dropdown-panel {
+                box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.15);
+                z-index: 1000000;
+                margin: 0;
+                border: none;
+                height: auto;
+                max-height: 360px;
+                min-width: 200px;
+                top: calc(100% + 12px);
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    border-left: 8px solid transparent;
+                    border-right: 8px solid transparent;
+                    border-bottom: 8px solid #FFFFFF;
+                    top: -8px;
+                    left: 16px;
+                }
+
+                .ng-dropdown-panel-items {
+                    border-radius: 2px;
+                    padding: 4px;
+                    background: $as-white-100;
+                    max-height: 360px;
+
+                    .ng-option {
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: $as-gray-600;
+                        transition: 0.2s ease-in-out all;
+                        white-space: normal;
+
+                        &:hover {
+                            background: $as-blue-100;
+                            color: $as-blue-600;
+                        }
+
+                        &.ng-option-selected {
+                            color: $as-blue-600;
+                            font-weight: $font-weight-bold;
+                            position: relative;
+
+                            &::before {
+                                content: '\e94c';
+                                position: absolute;
+                                top: 15px;
+                                right: 16px;
+                                display: flex;
+                                height: calc(100% - 28px);
+                                align-items: center;
+                                font-size: 10px;
+                                line-height: 10px;
+                                font-family: 'fontello';
+                            }
+                        }
+
+                        &.ng-option-disabled {
+                            cursor: default;
+                            color: $as-gray-300;
+
+                            &:hover {
+                                background: transparent;
+                                color: $as-gray-300;
+                            }
+                        }
+
+                        .ng-option-label {
+                            display: block;
+                            padding-right: 16px;
+                            word-wrap: break-word;
+                            word-break: break-all;
+                            -ms-word-break: break-all;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.as-secondary-nav {
+    background-color: $as-gray-100;
+    width: 100%;
+
+    .nav-item {
+        height: 56px;
+        border-right: 1px solid $as-gray-300;
+
+        .nav-link {
+            color: $as-gray-600;
+            padding: 0 24px;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+            display: flex;
+            height: 100%;
+            align-items: center;
+            transition: .2s ease-in-out all;
+            border-radius: 0;
+
+            &:hover {
+                color: $as-blue-300;
+            }
+
+            &.active {
+                background-color: transparent;
+                box-shadow: inset 0px -2px 0px $as-blue-600;
+                color: $as-blue-600;
+            }
+
+            &.disabled {
+                background-color: $as-gray-400;
+                color: $as-gray-500;
+            }
+        }
+    }
+}

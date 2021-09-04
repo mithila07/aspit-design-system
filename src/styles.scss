@@ -1,0 +1,21 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~@ng-select/ng-select/themes/default.theme.css";
+@import '~ngx-toastr/toastr';
+@import '~ngx-bootstrap/datepicker/bs-datepicker.css';
+@import '~perfect-scrollbar/css/perfect-scrollbar.css';
+
+html {
+    font-size: 100%;
+}
+
+.as-example {
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: .2rem;
+    border: solid #f8f9fa;
+
+    &:last-of-type {
+        margin-bottom: 8rem !important;
+    }
+}

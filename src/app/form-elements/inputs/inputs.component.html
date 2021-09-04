@@ -1,0 +1,414 @@
+<div class="sub-title-wrapper mb-3">
+    <h3>Inputs</h3>
+</div>
+
+<div class="as-example row mb-5">
+    <div class="col-12 col-md-4 d-flex flex-column">
+        <div class="as-form-group">
+            <input type="text" class="as-form-group__input" placeholder=" " required>
+            <label class="as-form-group__label">Label</label>
+            <span class="as-form-group__helper-text">Helper text goes here</span>
+        </div>
+    </div>
+
+    <div class="col-12 offset-md-1 col-md-7 d-flex">
+        <pre class="w-100 mb-0"><code class="p-3 rounded" [highlight]="input"></code></pre>
+    </div>
+
+
+    <div class="col-12">
+        <p class="my-3">Disabled</p>
+    </div>
+
+
+    <div class="col-12 col-md-4 d-flex flex-column">
+        <div class="as-form-group disabled mb-5">
+            <input type="text" class="as-form-group__input" placeholder=" " required disabled>
+            <label class="as-form-group__label">Label</label>
+            <span class="as-form-group__helper-text">Helper text goes here</span>
+        </div>
+
+        <div class="as-form-group disabled">
+            <input type="text" class="as-form-group__input" placeholder=" " required disabled value="I typed">
+            <label class="as-form-group__label">Label</label>
+            <span class="as-form-group__helper-text">Helper text goes here</span>
+        </div>
+    </div>
+
+    <div class="col-12 offset-md-1 col-md-7 d-flex">
+        <pre class="w-100 mb-0"><code class="p-3 rounded" [highlight]="inputDisabled"></code></pre>
+    </div>
+
+    <div class="col-12">
+        <p class="my-3">Error</p>
+    </div>
+
+    <div class="col-12 col-md-4 d-flex flex-column">
+        <div class="as-form-group as-form-group--error mb-5">
+            <input type="text" class="as-form-group__input" placeholder=" " required>
+            <label class="as-form-group__label">Label</label>
+            <span class="as-form-group__helper-text">Helper text goes here</span>
+        </div>
+    </div>
+
+    <div class="col-12 offset-md-1 col-md-7 d-flex">
+        <pre class="w-100 mb-0"><code class="p-3 rounded" [highlight]="inputError"></code></pre>
+    </div>
+
+    <div class="col-12">
+        <p class="my-3">Alert</p>
+    </div>
+
+    <div class="col-12 col-md-4 d-flex flex-column">
+        <div class="as-form-group as-form-group--alert mb-5">
+            <input type="text" class="as-form-group__input" placeholder=" " required>
+            <label class="as-form-group__label">Label</label>
+            <span class="as-form-group__helper-text">Helper text goes here</span>
+        </div>
+    </div>
+
+    <div class="col-12 offset-md-1 col-md-7 d-flex">
+        <pre class="w-100 mb-0"><code class="p-3 rounded" [highlight]="inputAlert"></code></pre>
+    </div>
+</div>
+
+<div class="sub-title-wrapper my-3">
+    <h3>Description Input</h3>
+</div>
+
+<div class="as-example row mb-5">
+    <div class="col-12 col-md-4 d-flex flex-column">
+        <div class="as-form-group mb-5">
+            <textarea class="as-form-group__textarea" placeholder=" " required></textarea>
+            <label class="as-form-group__label">Label</label>
+            <span class="as-form-group__character-counter">102 / 360</span>
+            <span class="as-form-group__helper-text">Helper text goes here</span>
+        </div>
+    </div>
+
+    <div class="col-12 offset-md-1 col-md-7 d-flex">
+        <pre class="w-100 mb-0"><code class="p-3 rounded" [highlight]="inputTextArea"></code></pre>
+    </div>
+
+
+    <div class="col-12">
+        <p class="my-3">Description Input Disabled</p>
+    </div>
+
+    <div class="col-12 col-md-4 d-flex flex-column">
+        <div class="as-form-group mb-5 disabled">
+            <textarea class="as-form-group__textarea" placeholder=" " required disabled></textarea>
+            <label class="as-form-group__label">Label</label>
+            <span class="as-form-group__character-counter">102 / 360</span>
+            <span class="as-form-group__helper-text">Helper text goes here</span>
+        </div>
+    </div>
+
+    <div class="col-12 offset-md-1 col-md-7 d-flex ">
+        <pre class="w-100 mb-0"><code class="p-3 rounded" [highlight]="inputTextAreaDisabled"></code></pre>
+    </div>
+
+    <div class="col-12">
+        <p class="my-3">Description Input Filled Disabled</p>
+    </div>
+
+    <div class="col-12 col-md-4 d-flex flex-column">
+        <div class="as-form-group mb-5 disabled">
+            <textarea class="as-form-group__textarea" placeholder=" " required
+                disabled>I have just typed a quite long description text in here that has over a hundred characters with spaces</textarea>
+            <label class="as-form-group__label">Label</label>
+            <span class="as-form-group__character-counter">102 / 360</span>
+            <span class="as-form-group__helper-text">Helper text goes here</span>
+        </div>
+    </div>
+
+    <div class="col-12 offset-md-1 col-md-7 d-flex ">
+        <pre class="w-100 mb-0"><code class="p-3 rounded" [highlight]="inputTextAreaFilledDisabled"></code></pre>
+    </div>
+
+    <div class="col-12">
+        <p class="my-3">Description Input Error</p>
+    </div>
+
+    <div class="col-12 col-md-4 d-flex flex-column">
+        <div class="as-form-group as-form-group--error-textarea mb-5">
+            <textarea class="as-form-group__textarea" placeholder=" " required></textarea>
+            <label class="as-form-group__label">Label</label>
+            <span class="as-form-group__character-counter">102 / 360</span>
+            <span class="as-form-group__helper-text">Helper text goes here</span>
+        </div>
+    </div>
+
+    <div class="col-12 offset-md-1 col-md-7 d-flex ">
+        <pre class="w-100 mb-0"><code class="p-3 rounded" [highlight]="inputTextAreaError"></code></pre>
+    </div>
+
+    <div class="col-12">
+        <p class="my-3">Description Input Alert</p>
+    </div>
+
+    <div class="col-12 col-md-4 d-flex flex-column">
+        <div class="as-form-group as-form-group--alert-textarea mb-5">
+            <textarea class="as-form-group__textarea" placeholder=" " required></textarea>
+            <label class="as-form-group__label">Label</label>
+            <span class="as-form-group__character-counter">102 / 360</span>
+            <span class="as-form-group__helper-text">Helper text goes here</span>
+        </div>
+    </div>
+
+    <div class="col-12 offset-md-1 col-md-7 d-flex ">
+        <pre class="w-100 mb-0"><code class="p-3 rounded" [highlight]="inputTextAreaAlert"></code></pre>
+    </div>
+</div>
+
+
+<div class="sub-title-wrapper my-3">
+    <h3>Searchbar</h3>
+</div>
+
+<div class="as-example row mb-5">
+    <div class="col-12 col-md-4 d-flex flex-column">
+        <div class="as-search">
+            <input class="as-search__input" type="search" placeholder="Search...">
+            <i class="as-search__icon icon-search" aria-hidden="true"></i>
+        </div>
+    </div>
+
+    <div class="col-12 offset-md-1 col-md-7 d-flex">
+        <pre class="w-100 mb-0"><code class="p-3 rounded" [highlight]="searchBar"></code></pre>
+    </div>
+
+    <div class="col-12">
+        <p class="my-3">Searchbar-disabled</p>
+    </div>
+
+    <div class="col-12 col-md-4 d-flex flex-column">
+        <div class="as-search disabled">
+            <input class="as-search__input" type="search" placeholder="Search..." disabled>
+            <i class="as-search__icon icon-search" aria-hidden="true"></i>
+        </div>
+    </div>
+
+    <div class="col-12 offset-md-1 col-md-7 d-flex">
+        <pre class="w-100 mb-0"><code class="p-3 rounded" [highlight]="searchBarDisabled"></code></pre>
+    </div>
+</div>
+
+<!-- Radio buttons-->
+
+<div class="sub-title-wrapper my-3">
+    <h3>Radio buttons</h3>
+</div>
+
+<div class="as-example row mb-5">
+    <div class="col-12 col-md-4 d-flex flex-column">
+        <div class="d-flex justify-content-between w-100">
+            <label class="as-radio-button">
+                <input type="radio" name="radio" class="as-radio-button__input">
+                <span class="as-radio-button__mark"></span>
+            </label>
+
+            <label class="as-radio-button">
+                <input type="radio" name="radio1" class="as-radio-button__input" checked>
+                <span class="as-radio-button__mark"></span>
+            </label>
+
+            <label class="as-radio-button disabled">
+                <input type="radio" name="radio2" class="as-radio-button__input" disabled>
+                <span class="as-radio-button__mark"></span>
+            </label>
+
+            <label class="as-radio-button disabled">
+                <input type="radio" name="radio3" class="as-radio-button__input" disabled checked>
+                <span class="as-radio-button__mark"></span>
+            </label>
+        </div>
+
+
+        <div class="d-flex justify-content-between w-100 mt-5">
+            <label class="as-radio-button">Label
+                <input type="radio" name="radio4" class="as-radio-button__input">
+                <span class="as-radio-button__mark"></span>
+            </label>
+
+            <label class="as-radio-button disabled">Label
+                <input type="radio" name="radio5" class="as-radio-button__input" disabled>
+                <span class="as-radio-button__mark"></span>
+            </label>
+
+            <label class="as-radio-button disabled">Label
+                <input type="radio" name="radio6" class="as-radio-button__input" disabled checked>
+                <span class="as-radio-button__mark"></span>
+            </label>
+        </div>
+    </div>
+
+    <div class="col-12 offset-md-1 col-md-7 d-flex">
+        <pre class="w-100 mb-0"><code class="p-3 rounded" [highlight]="radioButton"></code></pre>
+    </div>
+</div>
+
+<!-- Checkboxes-->
+
+<div class="sub-title-wrapper my-3">
+    <h3>Checkboxes</h3>
+</div>
+
+<div class="as-example row mb-5">
+    <div class="col-12 col-md-4 d-flex flex-column">
+        <div class="d-flex justify-content-between mb-5">
+            <div class="as-checkbox">
+                <input class="as-checkbox__input" id="as-checkbox1" type="checkbox" value="value1">
+                <label class="as-checkbox__label" for="as-checkbox1"></label>
+            </div>
+
+            <div class="as-checkbox">
+                <input class="as-checkbox__input" id="as-checkbox2" type="checkbox" value="value2" checked>
+                <label class="as-checkbox__label" for="as-checkbox2"></label>
+            </div>
+
+            <div class="as-checkbox disabled">
+                <input class="as-checkbox__input" id="as-checkbox3" type="checkbox" value="value3" disabled>
+                <label class="as-checkbox__label" for="as-checkbox3"></label>
+            </div>
+
+            <div class="as-checkbox disabled">
+                <input class="as-checkbox__input" id="as-checkbox4" type="checkbox" value="value4" disabled checked>
+                <label class="as-checkbox__label" for="as-checkbox4"></label>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between">
+            <div class="as-checkbox">
+                <input class="as-checkbox__input" id="as-checkbox5" type="checkbox" value="value1">
+                <label class="as-checkbox__label" for="as-checkbox5">Label</label>
+            </div>
+
+            <div class="as-checkbox disabled">
+                <input class="as-checkbox__input" id="as-checkbox6" type="checkbox" value="value3" disabled>
+                <label class="as-checkbox__label" for="as-checkbox6">Label</label>
+            </div>
+
+            <div class="as-checkbox disabled">
+                <input class="as-checkbox__input" id="as-checkbox7" type="checkbox" value="value4" disabled checked>
+                <label class="as-checkbox__label" for="as-checkbox7">Label</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 offset-md-1 col-md-7 d-flex">
+        <pre class="w-100 mb-0"><code class="p-3 rounded" [highlight]="checkBox"></code></pre>
+    </div>
+</div>
+
+<div class="sub-title-wrapper my-3">
+    <h3>Checkbox button</h3>
+</div>
+
+<div class="as-example row mb-5">
+    <div class="col-12 col-md-4 d-flex flex-column">
+        <div class="as-checkbox as-checkbox--btn mb-4">
+            <input class="as-checkbox__input" id="as-checkbox-btn" type="checkbox" value="value-btn">
+            <label class="as-checkbox__label" for="as-checkbox-btn">Label</label>
+        </div>
+
+        <div class="as-checkbox as-checkbox--btn mb-4">
+            <input class="as-checkbox__input" id="as-checkbox-btn1" type="checkbox" value="value-btn1" checked>
+            <label class="as-checkbox__label" for="as-checkbox-btn1">Label</label>
+        </div>
+
+        <div class="as-checkbox as-checkbox--btn disabled mb-4">
+            <input class="as-checkbox__input" id="as-checkbox-btn2" type="checkbox" value="value-btn2" disabled>
+            <label class="as-checkbox__label" for="as-checkbox-btn2">Label</label>
+        </div>
+
+        <div class="as-checkbox as-checkbox--btn disabled mb-4">
+            <input class="as-checkbox__input" id="as-checkbox-btn3" type="checkbox" value="value-btn3" checked disabled>
+            <label class="as-checkbox__label" for="as-checkbox-btn3">Label</label>
+        </div>
+    </div> 
+
+    <div class="col-12 offset-md-1 col-md-7 d-flex">
+        <pre class="w-100 mb-0"><code class="p-3 rounded" [highlight]="checkBoxButton"></code></pre>
+    </div>
+
+</div>
+
+<div class="sub-title-wrapper my-3">
+    <h3>Toggle switch</h3>
+</div>
+
+<div class="as-example row mb-5">
+    <div class="col-12 col-md-4 d-flex flex-column">
+        <div class="d-flex justify-content-between mb-5">
+            <div class="as-toggle">
+                <label class="as-toggle__switch">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+            <div class="as-toggle">
+                <label class="as-toggle__switch">
+                    <input type="checkbox" checked />
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+            <div class="as-toggle disabled">
+                <label class="as-toggle__switch">
+                    <input type="checkbox" disabled />
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-between mb-4">
+            <div class="as-toggle">
+                <div class="as-toggle__label mr-16">
+                    Label
+                </div>
+                <label class="as-toggle__switch">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+            <div class="as-toggle disabled">
+                <div class="as-toggle__label mr-16">
+                    Label
+                </div>
+                <label class="as-toggle__switch">
+                    <input type="checkbox" disabled/>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-between ">
+            <div class="as-toggle flex-row-reverse">
+                <div class="as-toggle__label ml-16">
+                    Label
+                </div>
+                <label class="as-toggle__switch">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+            <div class="as-toggle flex-row-reverse disabled">
+                <div class="as-toggle__label ml-16">
+                    Label
+                </div>
+                <label class="as-toggle__switch">
+                    <input type="checkbox" disabled/>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 offset-md-1 col-md-7 d-flex">
+        <pre class="w-100 mb-0"><code class="p-3 rounded" [highlight]="toggle"></code></pre>
+    </div>
+</div>
+

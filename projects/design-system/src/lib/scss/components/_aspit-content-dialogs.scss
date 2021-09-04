@@ -1,0 +1,163 @@
+.as-modal {
+    &.modal-dialog {
+        width: auto !important;
+        max-width: 1069px !important;
+    }
+
+    .modal-content {
+
+        .modal-header {
+            padding: 24px;
+            align-items: center;
+
+            h3 {
+                font-size: 24px;
+                line-height: 32px;
+                font-weight: 700;
+            }
+
+            button {
+                color: $as-black-100;
+                padding: 0;
+                opacity: 1 !important;
+                text-shadow: none;
+                margin: 0;
+
+                &:focus {
+                    outline: none;
+                }
+
+                i::before {
+                    margin: 0;
+                }
+            }
+        }
+
+        .modal-body {
+            padding: 0;
+
+            .content-body {
+                display: flex;
+                height: clamp(600px, 50%, 1070px);
+                max-height: 70vh;
+
+                &__title {
+                    font-weight: 700;
+                    line-height: 32px;
+                    font-size: 24px;
+                }
+
+                &__layout {
+                    border-right: 1px solid $as-gray-300;
+                    display: flex;
+                    flex-direction: column;
+                    width: calc(100% - 288px);
+                    position: relative;
+                }
+
+                &__sidebar {
+                    display: flex;
+                    flex-direction: column;
+                    width: 288px;
+                }
+
+                &__wrapper {
+                    padding: 24px;
+
+                    .popover {
+                        timepicker {
+                            .bs-timepicker-field {
+                                margin-bottom: 0;
+                                min-width: 50px;
+                            }
+                        }
+                    }
+                }
+
+                &__label {
+                    font-size: 14px;
+                    line-height: 24px;
+                    margin-bottom: 0;
+                }
+
+                &__separator {
+                    height: 1px;
+                    background-color: $as-gray-400;
+                    margin-bottom: 16px;
+                    width: 100%;
+                }
+
+                &__btns {
+                    border-top: 1px solid $as-gray-200;
+                    padding-top: 24px;
+                }
+            }
+        }
+
+        .modal-footer {
+            border: none;
+            padding: 32px 24px 24px 24px;
+            justify-content: flex-start;
+
+            .content-footer {
+                width: 100%;
+            }
+        }
+    }
+
+    &--sm {
+        &.modal-dialog {
+            max-width: 432px !important;
+        }
+
+        .modal-content {
+
+            .modal-header {
+                padding-top: 32px;
+                padding-bottom: 32px;
+                border: none;
+
+                h3 {
+                    flex-grow: 1;
+                    text-align: center;
+                }
+            }
+
+            .modal-body {
+
+                .content-body {
+                    min-height: 292px;
+                    height: auto !important;
+                    padding: 0 24px;
+                }
+            }
+        }
+    }
+
+    &--confirmation {
+        .modal-content {
+
+            .modal-header {
+                padding-top: 24px;
+                padding-bottom: 0;
+                justify-content: flex-end;
+            }
+
+            .modal-body {
+
+                .content-body {
+                    flex-direction: column;
+                    height: auto !important;
+                    min-height: auto;
+                    align-items: center;
+
+                    &__icon {
+                        font-size: 56px;
+                        line-height: 56px;
+                        margin-bottom: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

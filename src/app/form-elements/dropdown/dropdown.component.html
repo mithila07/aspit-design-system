@@ -1,0 +1,79 @@
+<div class="sub-title-wrapper my-3">
+    <h3>Select dropdown</h3>
+</div>
+
+<div class="as-example row mb-5">
+    <div class="col-12 col-md-4 d-flex flex-column mb-5">
+        <div class="as-dropdown">
+            <ng-select [items]="cities" bindLabel="name" [(ngModel)]="selectedCity"
+                class="as-dropdown__input" [clearable]="false">
+                <ng-template ng-footer-tmp>
+                    <button class="btn btn-sm btn-secondary" (click)="clearSelection()">Clear selection</button>
+                </ng-template>
+            </ng-select>
+            <label class="as-dropdown__label">Label</label>
+            <span class="as-dropdown__helper-text">Helper text goes here</span>
+        </div>
+    </div>
+
+    <div class="col-12 offset-md-1 col-md-7 d-flex mb-5">
+        <pre class="w-100 mb-0"><code class="p-3 rounded" [highlight]="dropdown"></code></pre>
+    </div>
+
+    <div class="col-12 col-md-4 d-flex flex-column mb-5">
+        <p class="mb-3">Disabled</p>
+        <div class="as-dropdown disabled mb-4">
+            <ng-select [items]="items1" bindLabel="name" [(ngModel)]="selectedItem1"
+                class="as-dropdown__input" [clearable]="false" [readonly]="true">
+            </ng-select>
+            <label class="as-dropdown__label">Label</label>
+            <span class="as-dropdown__helper-text">Helper text goes here</span>
+        </div>
+   
+        <p class="my-3">Disabled Filled</p>
+
+        <div class="as-dropdown disabled">
+            <ng-select [items]="items" bindLabel="name" [(ngModel)]="selectedItem"
+                class="as-dropdown__input has-value" [clearable]="false" [readonly]="true">
+            </ng-select>
+            <label class="as-dropdown__label">Label</label>
+            <span class="as-dropdown__helper-text">Helper text goes here</span>
+        </div>
+    </div>
+
+    <div class="col-12 offset-md-1 col-md-7 d-flex mb-5">
+        <pre class="w-100 mb-0"><code class="p-3 rounded" [highlight]="dropdownDisabled"></code></pre>
+    </div>
+
+    <div class="col-12 col-md-4 d-flex flex-column mb-5">
+        <p class="mb-3">Error</p>
+
+        <div class="as-dropdown as-dropdown--error">
+            <ng-select [items]="errItems" bindLabel="name" [(ngModel)]="selectedErrItem"
+                class="as-dropdown__input has-error" [clearable]="false">
+            </ng-select>
+            <label class="as-dropdown__label">Label</label>
+            <span class="as-dropdown__helper-text">Helper text goes here</span>
+        </div>
+    </div>
+
+    <div class="col-12 offset-md-1 col-md-7 d-flex mb-5">
+        <pre class="w-100 mb-0"><code class="p-3 rounded" [highlight]="dropdownError"></code></pre>
+    </div>
+
+    <div class="col-12 col-md-4 d-flex flex-column">
+        <p class="mb-3">Alert</p>
+
+        <div class="as-dropdown as-dropdown--alert">
+            <ng-select [items]="aleItems" bindLabel="name" [(ngModel)]="selectedAleItem"
+                class="as-dropdown__input has-alert" [clearable]="false">
+            </ng-select>
+            <label class="as-dropdown__label">Label</label>
+            <span class="as-dropdown__helper-text">Helper text goes here</span>
+        </div>
+    </div>
+
+    <div class="col-12 offset-md-1 col-md-7 d-flex">
+        <pre class="w-100 mb-0"><code class="p-3 rounded" [highlight]="dropdownAlert"></code></pre>
+    </div>
+</div>

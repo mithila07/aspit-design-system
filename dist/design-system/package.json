@@ -1,0 +1,24 @@
+{
+  "name": "@aspit/design-system",
+  "version": "1.1.0",
+  "author": "ASPIT",
+  "peerDependencies": {
+    "@angular/common": "8.2.14",
+    "@angular/core": "8.2.14"
+  },
+  "dependencies": {
+    "tslib": "^1.9.0"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {},
+  "main": "bundles/aspit-design-system.umd.js",
+  "module": "fesm5/aspit-design-system.js",
+  "es2015": "fesm2015/aspit-design-system.js",
+  "esm5": "esm5/aspit-design-system.js",
+  "esm2015": "esm2015/aspit-design-system.js",
+  "fesm5": "fesm5/aspit-design-system.js",
+  "fesm2015": "fesm2015/aspit-design-system.js",
+  "typings": "aspit-design-system.d.ts",
+  "metadata": "aspit-design-system.metadata.json",
+  "sideEffects": false
+}

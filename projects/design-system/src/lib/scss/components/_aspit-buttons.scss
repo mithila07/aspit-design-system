@@ -1,0 +1,178 @@
+$primary-button-height: 56px;
+$secondary-button-height: 40px;
+
+$icon-button-width-n-height: 40px;
+
+$primary-button-text-color: $as-white-100;
+
+$primary-button-bg: $as-blue-600;
+$primary-button-hover-bg: $as-blue-700;
+
+$success-button-bg: $as-green-200;
+$success-button-hover-bg: $as-green-300;
+
+$danger-button-bg: $as-red-300;
+$danger-button-hover-bg: $as-red-400;
+
+$disabled-button-bg: $as-gray-400;
+
+$secondary-button-bg: #ECF3FA;
+$secondary-button-text-color: $as-blue-600;
+$secondary-button-border-color: $as-blue-400;
+$secondary-button-hover-text-color: $as-blue-700;
+$secondary-button-hover-border-color: $as-blue-700;
+
+$secondary-danger-button-bg: #FFEFEE;
+$secondary-danger-button-text-color: $as-red-300;
+$secondary-danger-button-border-color: $as-red-200;
+$secondary-danger-button-hover-text-color: $as-red-400;
+$secondary-danger-button-hover-border-color: $as-red-400;
+
+
+$secondary-button-disabled-bg: $as-gray-100;
+$secondary-button-disabled-text-color: $as-gray-500;
+$secondary-button-disabled-border-color: $as-gray-400;
+
+.as-btn {
+    width: 100%;
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 600;
+    transition: 0.2s ease-in-out all;
+    border: none;
+    padding: 0 16px;
+    margin-bottom: 8px;
+
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+
+    i {
+        transition: 0.2s ease-in-out all;
+        color: $primary-button-text-color;
+        font-weight: 400;
+    }
+
+    &--56 {
+        height: $primary-button-height;
+    }
+
+    &--40 {
+        width: auto;
+        height: $secondary-button-height;
+    }
+
+    &--icon {
+        width: $icon-button-width-n-height;
+        height: $icon-button-width-n-height;
+    }
+
+    &--primary {
+        background-color: $primary-button-bg;
+        color: $primary-button-text-color;
+
+        &:hover {
+            background-color: $primary-button-hover-bg; 
+        }
+    }
+
+    &--success {
+        background-color: $success-button-bg;
+        color: $primary-button-text-color;
+
+        &:hover {
+            background-color: $success-button-hover-bg; 
+        }
+    }
+
+    &--danger {
+        background-color: $danger-button-bg;
+        color: $primary-button-text-color;
+
+        &:hover {
+            background-color: $danger-button-hover-bg; 
+        }
+    }
+
+    &:disabled {
+        background-color: $disabled-button-bg;
+        color: $primary-button-text-color;
+    }
+
+    &--secondary {
+        background-color: $secondary-button-bg;
+        color: $secondary-button-text-color;
+        border: 1px solid $secondary-button-border-color;
+
+        i {
+            color: $secondary-button-text-color;
+
+            &.as-btn__icon-arrow {
+                color: $as-blue-400;
+            }
+        }
+
+        &:hover {
+            color: $secondary-button-hover-text-color;
+            border-color: $secondary-button-hover-border-color;
+
+            i {
+                color: $secondary-button-hover-text-color;
+            }
+        }
+
+        &--danger {
+            background-color: $secondary-danger-button-bg;
+            color: $secondary-danger-button-text-color;
+            border: 1px solid $secondary-danger-button-border-color;
+
+            i {
+                color: $secondary-danger-button-text-color;
+    
+                &.as-btn__icon-arrow {
+                    color: $as-red-200;
+                }
+            }
+
+            &:hover {
+                color: $secondary-danger-button-hover-text-color;
+                border-color: $secondary-danger-button-hover-border-color;
+
+                i {
+                    color: $secondary-danger-button-hover-text-color;
+                }
+            }
+        }
+        
+        &:disabled {
+            background-color: $secondary-button-disabled-bg;
+            color: $secondary-button-disabled-text-color;
+            border-color: $secondary-button-disabled-border-color;
+
+            &:hover {
+                border-color: $secondary-button-disabled-border-color;
+            }
+
+            i {
+                color: $secondary-button-disabled-text-color;
+    
+                &.as-btn__icon-arrow {
+                    color: $secondary-button-disabled-text-color;
+                }
+            }
+        }
+    }
+
+    &--selected {
+        background-color: $as-white-100;
+        color: $as-blue-700;
+        border-color: $as-blue-600;
+
+        i.icon-button,
+        i.as-btn__icon-arrow {
+            color: $as-blue-700;
+        }
+    }
+}

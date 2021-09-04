@@ -1,0 +1,16 @@
+<div class="sub-title-wrapper my-3">
+    <h3>Calendar</h3>
+</div>
+
+<div class="as-example row mb-5">
+    <div class="col-12 col-md-4 d-flex flex-column">
+        <div class="d-flex flex-column mb-5">
+            <bs-datepicker-inline [bsValue]="bsInlineValue"
+                [bsConfig]="{containerClass: 'theme-dark-blue datepicker-sidebar-position as-datepicker as-datepicker--full-date as-datepicker--on-popover', monthLabel: 'MMM' }">
+            </bs-datepicker-inline>
+        </div>
+    </div>
+    <div class="col-12 col-md-8 d-flex pt-5">
+        <pre class="w-100 mb-0"><code class="p-3 rounded" [highlight]="calendar"></code></pre>
+    </div>
+</div>

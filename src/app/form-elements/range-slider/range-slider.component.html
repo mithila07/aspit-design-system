@@ -1,0 +1,18 @@
+<div class="sub-title-wrapper mb-3">
+    <h3>Range Slider</h3>
+</div>
+
+<div class="as-example row mb-5">
+    <div class="col-12 col-md-4 d-flex flex-column">
+        <div class="aurora-range-slider d-flex flex-row align-items-center">
+            <button type="button" class="btn" (click)="valueDown()">-</button>
+            <ng5-slider [(value)]="value" [options]="options"></ng5-slider>
+            <button type="button" class="btn" (click)="valueUp()">+</button>
+        </div>
+        
+    </div>
+
+    <div class="col-12 offset-md-1 col-md-7 d-flex">
+        <pre class="w-100 mb-0"><code class="p-3 rounded" [highlight]="rangeslider"></code></pre>
+    </div>
+</div>

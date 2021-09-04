@@ -1,0 +1,76 @@
+<div class="title-wrapper mb-5 p-5 jumbotron jumbotron-fluid w-100">
+    <div class="display-4 mb-3">Navigation</div>
+    <div class="lead">A navigation bar is basically a list of links.<br>
+        There are two top navigation bars and a left sidebar consist within the Medica application.
+    </div>
+</div>
+
+<div class="sub-title-wrapper my-3">
+    <h3>Main navigation</h3>
+</div>
+
+<div class="as-example row mb-5">
+    <div class="col-12 d-flex flex-column">
+        <nav class="as-main-nav navbar navbar-expand bg-blue-600 h-56 pl-24 pr-0">
+            <h6 class="navbar-brand as-text-white h6">Head Title</h6>
+
+            <div class="as-main-nav__rhs-items pr-8">
+                <ng-select class="as-main-nav__dropdown" [clearable]="false" [items]="cities" [(ngModel)]="selectedCity"
+                    bindLabel="name" [searchable]="false">
+                    <ng-template ng-label-tmp let-item="item">
+                        <i [ngClass]="item.icon"></i>
+                    </ng-template>
+                </ng-select>
+
+                <form class="form-inline">
+                    <div class="as-search as-search--h-40">
+                        <input class="as-search__input" type="search" placeholder="Search...">
+                        <i class="as-search__icon icon-search" aria-hidden="true"></i>
+                    </div>
+                </form>
+                <div class="icon-item"><i class="icon-army-knife" aria-hidden="true"></i></div>
+                <div class="icon-item">
+                    <i class="icon-comment-alert" aria-hidden="true"></i>
+                    <span class="as-num-chip">2</span>
+                </div>
+                <div class="icon-item"><i class="icon-open-pane" aria-hidden="true"></i></div>
+            </div>
+        </nav>
+    </div>
+    <div class="col-12 d-flex pt-5">
+        <pre class="w-100 mb-0"><code class="p-3 rounded" [highlight]="mainNav"></code></pre>
+    </div>
+</div>
+
+<div class="sub-title-wrapper my-3">
+    <h3>Secondary navigation</h3>
+</div>
+
+<div class="as-example row mb-5">
+    <div class="col-12 d-flex flex-column">
+        <ul class="as-secondary-nav nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="#">One</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Second</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Third</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Forth</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Fifth</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sixth</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="col-12 d-flex pt-5">
+        <pre class="w-100 mb-0"><code class="p-3 rounded" [highlight]="secondaryNav"></code></pre>
+    </div>
+</div>

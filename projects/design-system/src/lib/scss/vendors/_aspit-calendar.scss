@@ -1,0 +1,248 @@
+bs-datepicker-container,
+bs-datepicker-inline {
+    .as-datepicker {
+        position: relative;
+        top: 10px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid $as-white-100;
+            top: -8px;
+            right: 16px;
+        }
+
+        .bs-datepicker-container {
+            padding: 0;
+
+            .bs-datepicker-head {
+                background: transparent;
+                min-width: auto;
+                width: 192px;
+                max-width: 192px;
+                height: auto;
+                padding: 16px 16px 0 16px;
+                text-align: left;
+                display: flex;
+                flex-direction: column;
+
+                bs-datepicker-navigation-view {
+                    display: flex;
+                    margin-bottom: 8px;
+                }
+
+                button {
+                    color: $as-black-100;
+
+                    &:hover {
+                        background: transparent;
+                    }
+
+                    &.next,
+                    &.previous {
+                        position: absolute;
+                        bottom: 16px;
+                        border-radius: 50%;
+                        border: 1px solid $as-blue-600;
+                        width: 18px;
+                        line-height: 18px;
+                        height: 18px;
+                        color: $as-blue-600;
+
+                        &:disabled {
+                            color: $as-gray-400;
+                            border-color: $as-gray-400;
+                            background: transparent;
+                        }
+
+                        span {
+                            font-size: 20px;
+                            line-height: 18px;
+                            height: 18px;
+                            width: 100%;
+                            border-radius: 50%;
+                            position: relative;
+                            top: -3px;
+                        }
+                    }
+
+                    &.next {
+                        right: 16px;
+                    }
+
+                    &.previous {
+                        left: 16px;
+                    }
+
+                    &.current {
+                        font-size: 20px;
+                        line-height: 28px;
+                        font-weight: 700;
+                        padding: 0;
+                        position: relative;
+                        margin-right: 5px;
+                    }
+                }
+            }
+
+            .bs-datepicker-body {
+                border: none;
+                width: 192px;
+                min-width: auto;
+                min-height: 210px;
+                padding: 0 16px;
+
+                table {
+                    &.days {
+                        th {
+                            color: $as-gray-600;
+                            font-size: 10px;
+                            line-height: 16px;
+                        }
+
+                        td {
+                            span {
+                                font-size: 10px;
+                                line-height: 16px;
+                                color: $as-black-100;
+                                border-radius: 2px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin-bottom: 0;
+
+                                &:hover {
+                                    background: $as-blue-100;
+                                }
+
+                                &.selected {
+                                    background: $as-blue-600;
+                                    color: $as-white-100;
+                                }
+
+                                &.is-other-month {
+                                    color: rgba(0, 0, 0, 0.2);
+                                }
+
+                                &.disabled {
+                                    background: transparent;
+                                    color: $as-gray-400 !important;
+                                }
+                            }
+
+                            &.week {
+                                span {
+                                    color: $as-gray-600 !important;
+                                }
+                            }
+                        }
+                    }
+
+                    &.years {
+                        td {
+                            span {
+                                width: 40px;
+                                height: 40px;
+                                line-height: 40px;
+                                font-size: 10px;
+                                color: $as-black-100;
+                                border-radius: 2px;
+                                margin-bottom: 0;
+
+                                &:hover {
+                                    background: $as-blue-100;
+                                }
+
+                                &.selected {
+                                    background: $as-blue-600;
+                                    color: $as-white-100;
+                                }
+                            }
+
+                            &.disabled {
+
+                                span {
+                                    background: transparent;
+                                    color: $as-gray-400;
+                                }
+                            }
+                        }
+                    }
+
+                    &.months {
+                        td {
+                            height: 40px !important;
+
+                            span {
+                                width: 40px;
+                                height: 40px;
+                                line-height: 40px;
+                                font-size: 10px;
+                                color: $as-black-100;
+                                border-radius: 2px;
+                                margin-bottom: 0;
+                                padding: 0;
+
+                                &:hover {
+                                    background: $as-blue-100;
+                                    ;
+                                }
+
+                                &.selected {
+                                    background: $as-blue-600;
+                                    color: $as-white-100;
+                                }
+                            }
+
+                            &.disabled {
+
+                                span {
+                                    background: transparent;
+                                    color: $as-gray-400;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &--full-date {
+            .bs-datepicker-container {
+                .bs-datepicker-head {
+                    width: 288px;
+                }
+
+                .bs-datepicker-body {
+                    width: 288px;
+                    min-height: 265px;
+                }
+            }
+        }
+
+        &--on-popover {
+            box-shadow: none;
+            top: 0;
+
+            &::before {
+                display: none;
+            }
+
+            .bs-datepicker-container {
+                .bs-datepicker-head {
+                    button {
+
+                        &.next,
+                        &.previous {
+                            bottom: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

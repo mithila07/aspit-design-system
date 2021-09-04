@@ -1,0 +1,55 @@
+/* ASPIT Color Palette - v1 */
+
+$as-blue-100: #ECF3FA;
+$as-blue-200: #CFE5F8;
+$as-blue-300: #AED9FE;
+$as-blue-400: #8BC2F2;
+$as-blue-500: #51A3E5;
+$as-blue-600: #0078D7;
+$as-blue-700: #0069C0;
+$as-blue-800: #0A416F;
+
+$as-green-100: #E1F9E2;
+$as-green-200: #4CAF50;
+$as-green-300: #3C933F;
+
+$as-red-100: #FFF0EF;
+$as-red-200: #FF8F86;
+$as-red-300: #F44336;
+$as-red-400: #E23124;
+
+$as-orange-100: #FFF1D9;
+$as-orange-200: #FF9800;
+
+$as-yellow-100: #FFFFEF;
+$as-yellow-200: #FFFADE;
+$as-yellow-300: #F6CF08;
+
+$as-gray-100: #F7F7F7;
+$as-gray-200: #F2F2F2;
+$as-gray-300: #E0E0E0;
+$as-gray-400: #CCCCCC;
+$as-gray-500: #95989A;
+$as-gray-600: #7A7A7A;
+
+$as-black-100: #000000;
+$as-black-200: #333333;
+
+$as-white-100: #FFFFFF;
+$as-white-200: #FCFCFC;
+
+
+/* ASPIT Typography - V1 */
+
+$as-primary-font: 'Open Sans', sans-serif;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+/* ASPIT Column Properties - v1 */
+
+$as-column-height: calc(100vh - 100px);
+$as-column-header-height: 144px;
+$as-column-content-height: calc(100vh - 244px);

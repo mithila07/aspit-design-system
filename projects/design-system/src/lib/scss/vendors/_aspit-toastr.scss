@@ -1,0 +1,82 @@
+.toast-container {
+
+    .ngx-toastr {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+        min-width: 430px;
+        padding: 0 16px 0 48px;
+        background-size: 18px;
+        border-radius: 2px;
+        box-shadow: 0px 30px 100px rgba($as-black-100, 0.3);
+
+        &:hover {
+            box-shadow: 0px 30px 100px rgba($as-black-100, 0.3);
+        }
+
+        .toast-message {
+            font-size: 10px;
+            line-height: 16px;
+            font-weight: 600;
+        }
+    }
+}
+
+.toast-close-button {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    top: 0;
+    right: 0;
+
+    &::after {
+        content: 'Close';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        text-shadow: none;
+    }
+
+    span {
+        display: none;
+    }
+     
+    &:hover,
+    &:focus {
+        outline: none;
+    }
+}
+
+.toast-success {
+    background-image: none;
+    background-color: $as-green-200;
+
+    &::before {
+        content: '\e94c';
+        font-family: "fontello";
+        position: absolute;
+        color: $as-green-200;
+        background-color: $as-white-100;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        left: 16px;
+        font-size: 9px;
+        line-height: 16px;
+        text-align: center;
+    }
+}
+
+.toast-error{
+    background-color: $as-red-300;
+}
+
+.toast-warning{
+    background-color: $as-orange-200;
+}
+
+.toast-info{
+    background-color: $as-blue-500;
+}

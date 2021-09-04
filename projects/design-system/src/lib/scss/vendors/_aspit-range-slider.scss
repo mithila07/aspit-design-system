@@ -1,0 +1,53 @@
+.aurora-range-slider{
+    height: 32px;
+    border: 1px solid $as-gray-300;
+    border-radius: 2px;
+    button{
+        height: 32px;
+        color: $as-blue-600;
+        font-size: 18px;
+        line-height: 1;
+        &:hover,&:focus{
+            color: $as-blue-600;
+        }
+        &:first-child{
+            border-right: 1px solid $as-gray-300;
+            border-radius: 2px 0 0 2px;
+        }
+        &:last-child{
+            border-left: 1px solid $as-gray-300;
+            border-radius: 0 2px 2px 0;
+        }
+    }
+    .ng5-slider{
+        margin: 0px 10px;
+        margin-top: 1px;
+        height: 2px;
+        .ng5-slider-bar-wrapper{
+            padding-top: 15px;
+            &.ng5-slider-full-bar{
+                height: 32px;
+            }
+            .ng5-slider-bar{
+                height: 2px;
+                &.ng5-slider-selection{
+                    background: $as-blue-600;
+                }
+            }
+        }
+        .ng5-slider-pointer{
+            width: 16px;
+            height: 16px;
+            top: -8px;
+            background: $as-blue-600;
+            &::after{
+                top: 4px;
+                left: 4px;
+                background: $as-blue-600;
+            }
+        }
+        .ng5-slider-bubble{
+            font-size: 14px;
+        }
+    }
+}

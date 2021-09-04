@@ -1,0 +1,25 @@
+.as-chip {
+    display: flex;
+    align-items: center;
+    color: $as-white-100;
+    font-size: 10px;
+    line-height: 16px;
+    font-weight: 600;
+    background-color: $as-blue-600;
+    height: 24px;
+    padding: 0 8px;
+    border-radius: 2px;
+}
+
+.as-num-chip {
+    display: flex;
+    align-items: center;
+    color: $as-white-100;
+    font-size: 10px;
+    line-height: 16px;
+    font-weight: 600;
+    background-color: $as-red-300;
+    height: 20px;
+    padding: 0 8px;
+    border-radius: 20px;
+}
